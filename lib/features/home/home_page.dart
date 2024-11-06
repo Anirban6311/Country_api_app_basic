@@ -29,7 +29,6 @@ class _HomePageState extends State<HomePage> {
                 suffixIcon: IconButton(
                   icon: Icon(Icons.search),
                   onPressed: () {
-                    print("name from home_page = ${countryController.text}");
                     Navigator.push(
                         context,
                         MaterialPageRoute(

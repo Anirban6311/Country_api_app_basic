@@ -1,41 +1,3 @@
-// import 'dart:convert';
-
-// class PostsDataUiModel {
-//   final int userId;
-//   final int id;
-//   final String title;
-//   final String body;
-//   PostsDataUiModel({
-//     required this.userId,
-//     required this.id,
-//     required this.title,
-//     required this.body,
-//   });
-
-//   Map<String, dynamic> toMap() {
-//     return {
-//       'userId': userId,
-//       'id': id,
-//       'title': title,
-//       'body': body,
-//     };
-//   }
-
-//   factory PostsDataUiModel.fromMap(Map<String, dynamic> map) {
-//     return PostsDataUiModel(
-//       userId: map['userId']?.toInt() ?? 0,
-//       id: map['id']?.toInt() ?? 0,
-//       title: map['title'] ?? '',
-//       body: map['body'] ?? '',
-//     );
-//   }
-
-//   String toJson() => json.encode(toMap());
-
-//   factory PostsDataUiModel.fromJson(String source) => PostsDataUiModel.fromMap(json.decode(source));
-// }
-
-
 import 'dart:convert';
 
 class CountryDataModel {
@@ -176,7 +138,8 @@ class CountryDataModel {
       employmentServices: map['employment_services']?.toDouble() ?? 0.0,
       employmentIndustry: map['employment_industry']?.toDouble() ?? 0.0,
       urbanPopulationGrowth: map['urban_population_growth']?.toDouble() ?? 0.0,
-      secondarySchoolEnrollmentFemale: map['secondary_school_enrollment_female']?.toDouble() ?? 0.0,
+      secondarySchoolEnrollmentFemale:
+          map['secondary_school_enrollment_female']?.toDouble() ?? 0.0,
       employmentAgriculture: map['employment_agriculture']?.toDouble() ?? 0.0,
       capital: map['capital'] ?? '',
       co2Emissions: map['co2_emissions']?.toDouble() ?? 0.0,
@@ -184,15 +147,19 @@ class CountryDataModel {
       tourists: map['tourists']?.toInt() ?? 0,
       exports: map['exports']?.toInt() ?? 0,
       lifeExpectancyFemale: map['life_expectancy_female']?.toDouble() ?? 0.0,
-      postSecondaryEnrollmentFemale: map['post_secondary_enrollment_female']?.toDouble() ?? 0.0,
-      postSecondaryEnrollmentMale: map['post_secondary_enrollment_male']?.toDouble() ?? 0.0,
-      primarySchoolEnrollmentFemale: map['primary_school_enrollment_female']?.toDouble() ?? 0.0,
+      postSecondaryEnrollmentFemale:
+          map['post_secondary_enrollment_female']?.toDouble() ?? 0.0,
+      postSecondaryEnrollmentMale:
+          map['post_secondary_enrollment_male']?.toDouble() ?? 0.0,
+      primarySchoolEnrollmentFemale:
+          map['primary_school_enrollment_female']?.toDouble() ?? 0.0,
       infantMortality: map['infant_mortality']?.toInt() ?? 0,
       gdpGrowth: map['gdp_growth']?.toDouble() ?? 0.0,
       threatenedSpecies: map['threatened_species']?.toInt() ?? 0,
       population: map['population']?.toInt() ?? 0,
       urbanPopulation: map['urban_population']?.toDouble() ?? 0.0,
-      secondarySchoolEnrollmentMale: map['secondary_school_enrollment_male']?.toDouble() ?? 0.0,
+      secondarySchoolEnrollmentMale:
+          map['secondary_school_enrollment_male']?.toDouble() ?? 0.0,
       name: map['name'] ?? '',
       popGrowth: map['pop_growth']?.toDouble() ?? 0.0,
       region: map['region'] ?? '',
@@ -201,7 +168,8 @@ class CountryDataModel {
       gdpPerCapita: map['gdp_per_capita']?.toDouble() ?? 0.0,
       fertility: map['fertility']?.toDouble() ?? 0.0,
       refugees: map['refugees']?.toDouble() ?? 0.0,
-      primarySchoolEnrollmentMale: map['primary_school_enrollment_male']?.toDouble() ?? 0.0,
+      primarySchoolEnrollmentMale:
+          map['primary_school_enrollment_male']?.toDouble() ?? 0.0,
     );
   }
 
